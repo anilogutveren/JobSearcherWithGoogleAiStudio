@@ -1,5 +1,5 @@
 {
-  "name": "Spring AI Job Search Agent",
-  "description": "A job search agent powered by Gemini and styled to honor Spring AI and Java. It finds up-to-date job postings using Google Search grounding.",
+  "name": "Spring AI Kotlin Job Agent",
+  "description": "A job search agent powered by Gemini and styled to honor Spring AI and Kotlin. It finds up-to-date job postings using Google Search grounding.",
   "requestFramePermissions": []
 }

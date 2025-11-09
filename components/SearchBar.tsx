@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 interface SearchBarProps {
@@ -7,7 +6,7 @@ interface SearchBarProps {
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch, isLoading }) => {
-  const [query, setQuery] = useState('remote senior java spring boot developer');
+  const [query, setQuery] = useState('remote senior kotlin spring boot developer');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -22,7 +21,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch, isLoading }) => {
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="e.g., Senior Java Developer in New York"
+        placeholder="e.g., Senior Kotlin Developer in New York"
         className="flex-grow bg-slate-800 border border-slate-700 text-slate-200 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 focus:outline-none transition-shadow"
         disabled={isLoading}
       />

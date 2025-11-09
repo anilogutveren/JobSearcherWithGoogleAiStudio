@@ -1,4 +1,3 @@
-
 import { GoogleGenAI } from "@google/genai";
 import type { GroundingSource, JobPosting } from '../types';
 
@@ -28,7 +27,7 @@ const parseJsonFromMarkdown = (markdown: string): { jobs: JobPosting[] } => {
 
 export const findJobs = async (query: string): Promise<{ jobs: JobPosting[], sources: GroundingSource[] }> => {
   const prompt = `
-    You are an expert Job Search Agent specializing in Java and Spring framework roles. 
+    You are an expert Job Search Agent specializing in Kotlin and Spring framework roles. 
     Based on the user's query: "${query}", find the top 5 most relevant job postings. 
     Use Google Search to ensure the information is up-to-date.
     Format your entire response as a single JSON object within a markdown code block (\`\`\`json ... \`\`\`).
